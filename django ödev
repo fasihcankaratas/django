@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Portföy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Adınız</h1>
+            <ul>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <img src="assets/images/profile.jpg" alt="Profil Fotoğrafı">
+        <h2>Hakkımda</h2>
+        <p>Ben bir yazılım geliştiricisiyim. Web geliştirme, Python programlama ve teknolojiye olan tutkumla projeler geliştiriyorum.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projelerim</h2>
+        <div class="project">
+            <h3>Proje 1</h3>
+            <p>Bu proje bir e-ticaret uygulaması örneğidir.</p>
+        </div>
+        <div class="project">
+            <h3>Proje 2</h3>
+            <p>Python ile yapılmış veri analizi projesi.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>İletişim</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Adınız" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Mesajınız" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adınız. Tüm Hakları Saklıdır.</p>
+        <div class="social-icons">
+            <a href="https://github.com/username"><img src="assets/icons/github.png" alt="GitHub"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header nav h1 {
+    display: inline;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 5px;
+}
